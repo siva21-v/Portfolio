@@ -1,0 +1,52 @@
+:root {
+  --accent: #0b63ff;
+  --bg: #f7fafc;
+  --card: #ffffff;
+  --muted: #666;
+}
+
+* { box-sizing: border-box; }
+body {
+  font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  line-height: 1.5;
+  margin: 0;
+  background: var(--bg);
+  color: #111;
+}
+.container { max-width: 1000px; margin: 32px auto; padding: 24px; }
+header { display: flex; align-items: center; justify-content: space-between; gap: 16px; }
+.brand { display: flex; align-items: center; gap: 12px; }
+.avatar {
+  width: 64px; height: 64px;
+  background: linear-gradient(135deg, var(--accent), #0b9bff);
+  border-radius: 12px;
+  display: flex; align-items: center; justify-content: center;
+  color: #fff; font-weight: 700; font-size: 20px;
+}
+nav a { margin-left: 16px; text-decoration: none; color: var(--muted); font-weight: 600; }
+
+.hero { display: grid; grid-template-columns: 1fr; gap: 18px; padding: 22px 0; }
+.card { background: var(--card); padding: 22px; border-radius: 12px; box-shadow: 0 6px 18px rgba(12,20,30,0.06); }
+h1 { margin: 0 0 6px; font-size: 28px; }
+p.lead { margin: 0; color: var(--muted); }
+.stack { margin-top: 12px; display: flex; flex-wrap: wrap; gap: 8px; }
+.chip { background: #eef6ff; padding: 6px 10px; border-radius: 999px; font-weight: 600; color: var(--accent); font-size: 13px; }
+section { margin-top: 20px; }
+.two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; }
+ul.skills { list-style: none; padding: 0; margin: 0; display: grid; grid-template-columns: repeat(2,1fr); gap: 8px; }
+ul.skills li { background: #fbfdff; padding: 10px; border-radius: 8px; border: 1px solid #eef3ff; font-weight: 600; }
+.projects .proj { margin-bottom: 12px; }
+.proj h3 { margin: 0 0 6px; font-size: 16px; }
+.proj p { margin: 0; color: var(--muted); }
+.cta { display: inline-block; margin-top: 12px; padding: 10px 14px; border-radius: 8px; background: var(--accent); color: #fff; text-decoration: none; font-weight: 700; }
+.cta-light { background: #e6eefc; color: var(--accent); margin-left: 10px; text-decoration: none; }
+footer { margin-top: 30px; text-align: center; color: var(--muted); font-size: 14px; }
+.contact-form input, .contact-form textarea { width: 100%; padding: 10px; margin-top: 8px; border-radius: 8px; border: 1px solid #e6eefc; }
+.contact-form button { margin-top: 8px; padding: 10px 14px; border-radius: 8px; border: none; background: var(--accent); color: #fff; font-weight: 700; }
+.success-msg { color: green; display: none; margin-top: 10px; }
+
+@media(max-width:800px) {
+  .two-col { grid-template-columns: 1fr; }
+  .brand nav { display: none; }
+  .avatar { width: 56px; height: 56px; }
+}

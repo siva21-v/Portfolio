@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Vullaganti Siva — Portfolio</title>
+  <meta name="description" content="Portfolio of Vullaganti Siva — Python, SQL & Web Developer.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="brand">
+        <div class="avatar">VS</div>
+        <div>
+          <div style="font-weight:800">Vullaganti Siva</div>
+          <div style="font-size:13px;color:var(--muted)">Python • SQL • Web Developer</div>
+        </div>
+      </div>
+      <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <main>
+      <section id="home" class="hero">
+        <div class="card">
+          <h1>Hi, I'm <span style="color:var(--accent)">Vullaganti Siva</span></h1>
+          <p class="lead">A motivated fresher specializing in <strong>Python</strong>, <strong>SQL</strong>, and web development. I build full-stack web apps and backend systems. Looking for a hands-on internship to contribute and grow.</p>
+          <div class="stack">
+            <span class="chip">Python</span>
+            <span class="chip">SQL</span>
+            <span class="chip">HTML</span>
+            <span class="chip">CSS</span>
+            <span class="chip">JavaScript</span>
+            <span class="chip">Bootstrap</span>
+            <span class="chip">Django</span>
+            <span class="chip">NumPy</span>
+            <span class="chip">Pandas</span>
+            <span class="chip">Matplotlib</span>
+          </div>
+          <div style="margin-top:14px">
+            <a class="cta" href="Siva_Internship_Resume.pdf" download>Download Resume</a>
+            <a class="cta cta-light" href="https://github.com/siva21-v" target="_blank">View GitHub</a>
+          </div>
+        </div>
+      </section>
+
+      <section id="about" class="card">
+        <h2>About</h2>
+        <p class="muted-text">I recently graduated with a B.Tech and have built projects using Python, Django, and web technologies. My core strengths are building user-focused web apps, working with REST APIs, and writing clean backend logic. I enjoy solving problems and learning new technologies quickly.</p>
+      </section>
+
+      <section id="skills" class="two-col">
+        <div class="card">
+          <h2>Skills</h2>
+          <ul class="skills">
+            <li>Python</li>
+            <li>SQL</li>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+            <li>Bootstrap</li>
+            <li>Django</li>
+            <li>NumPy</li>
+            <li>Pandas</li>
+            <li>Matplotlib</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h2>Tools & Techniques</h2>
+          <ul class="tools">
+            <li><strong>Authentication:</strong> JWT</li>
+            <li><strong>APIs:</strong> REST, Postman</li>
+            <li><strong>Versioning:</strong> Git</li>
+            <li><strong>Deployment:</strong> Netlify / Vercel</li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="projects" class="card projects">
+        <h2>Projects</h2>
+        <div class="proj">
+          <h3>Learning Management System (LearnHub) — Web Application</h3>
+          <p class="muted-text">Role-based LMS with Admin/Teacher/Student flows. Features: CRUD, video lessons, enrollments, certificate downloads. <a href="https://github.com/siva21-v/ELearnHub" target="_blank">View on GitHub</a></p>
+        </div>
+        <div class="proj">
+          <h3>Quiz Application — Python & MySQL</h3>
+          <p class="muted-text">Interactive quiz app with user accounts and admin panel for question management. Score tracking and analytics built-in. <a href="https://github.com/siva21-v/Quiz-Application" target="_blank">View on GitHub</a></p>
+        </div>
+      </section>
+
+      <section id="contact" class="card">
+        <h2>Contact</h2>
+        <p class="muted-text">Email: <a href="mailto:sivavullaganti@gmail.com">sivavullaganti@gmail.com</a> • Phone: 7989251344</p>
+
+        <div class="contact-form">
+          <form id="contactForm" action="https://formspree.io/f/xvgeogpv" method="POST">
+            <label>Name</label>
+            <input type="text" name="name" placeholder="Your name" required>
+            <label>Email</label>
+            <input type="email" name="email" placeholder="Your email" required>
+            <label>Message</label>
+            <textarea name="message" rows="4" placeholder="Write your message" required></textarea>
+            <button type="submit">Send Message</button>
+          </form>
+          <p id="successMsg" class="success-msg">Thank you! Your message has been sent.</p>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      Built by Vullaganti Siva • <a href="https://github.com/siva21-v" target="_blank">GitHub</a>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
